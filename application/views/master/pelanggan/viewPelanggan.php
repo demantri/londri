@@ -41,7 +41,7 @@
 					<td><?php echo $data['no_telp']?></td>
 					<td>
 						<a href="<?php echo site_url('pelanggan/edit/'.$data['id'])?>" class="button btn btn-warning"><i class="icon-edit"></i></a>
-						<a href="" class="button btn btn-danger"><i class="icon-trash"></i></a>
+						<a href="<?php echo site_url('pelanggan/delete/'.$data['id'])?>" class="button btn btn-danger tombol-hapus"><i class="icon-trash"></i></a>
 					</td>
                   </tr>
                 <?php } ?>

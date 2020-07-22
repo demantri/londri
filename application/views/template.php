@@ -130,8 +130,10 @@
             </div>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> -->
+        <script src="<?php echo base_url()?>assets/js/sweetalert2.all.min.js"></script>
+
         
         <script src="<?php echo base_url()?>assets/scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
         <script src="<?php echo base_url()?>assets/scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>

@@ -92,5 +92,12 @@
         $this->session->set_flashdata('flash', 'Diubah');
         redirect('master/pelanggan');
       }
+
+      function delete($id){
+        $where = array('id' => $id);
+        $this->model->hapus_data($where,'pelanggan');
+        $this->session->set_flashdata('flash', 'Dihapus');
+        redirect('master/pelanggan');
+      }
     }
 ?>

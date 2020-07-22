@@ -15,6 +15,8 @@ $route['pelanggan/add'] = 'master/pelanggan/add';
 $route['pelanggan/save'] = 'master/pelanggan/save';
 $route['pelanggan/edit/(:any)'] = 'master/pelanggan/edit/$1';
 $route['pelanggan/update'] = 'master/pelanggan/update';
+$route['pelanggan/delete/(:any)'] = 'master/pelanggan/delete/$1';
+
 
 // role
 $route['role'] = 'master/role';
