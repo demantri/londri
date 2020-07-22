@@ -22,20 +22,27 @@
         $this->template->load('template', 'master/pelanggan/form');
       }
 
-      public function save(){
-        $this->form_validation->set_rules('nama', 'Nama', 'required');
-        $this->form_validation->set_rules('alamat', 'Alamat', 'required');
-        $this->form_validation->set_rules('no_telp', 'No Telp', 'required');
-    
-        // $this->form_validation->set_error_delimiters('<div class="alert alert-danger"><li>', '</li></div>');
-        // $this->form_validation->set_rules($config);
+      public function save()
+      {
+          $this->form_validation->set_rules('nama', 'Nama', 'required');
+          $this->form_validation->set_rules('alamat', 'Jenis Barang', 'required|min_length[3]',
+          array(
+                  'required'      => '* %s tidak boleh kosong.',
+                  'min_length'    => '* min 3 karakter.'
+              ));
 
-        if ($this->form_validation->run() == FALSE){
-            $this->add();
-        }else{
-            $this->db->insert('pelanggan', $_POST);
-            redirect('master/pelanggan');
-        }
-      } 
+          if ($this->form_validation->run() == FALSE){
+              // $this->session->set_flashdata('error_message', show_alert('<i class="fa fa-close"></i><strong>Data gagal tersimpan!</strong>','danger'));
+              $this->session->set_flashdata('flash');
+              // echo "<script>alert('Gagal tersimpan!');</script>";
+              $this->add();
+          }else{
+              $this->session->set_flashdata('flash', 'Disimpan');
+
+              // $this->session->set_flashdata('success_message', show_alert('<i class="fa fa-check"></i><strong>Berhasil!</strong> Data tersimpan.','success'));
+              $this->db->insert('pelanggan', $_POST);
+              redirect('master/pelanggan');
+          }
+      }
     }
 ?>

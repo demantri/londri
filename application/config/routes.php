@@ -11,6 +11,7 @@ $route['/'] = 'home';
 // pelanggan
 $route['pelanggan'] = 'master/pelanggan';
 $route['pelanggan/add'] = 'master/pelanggan/add';
+$route['pelanggan/save'] = 'master/pelanggan/save';
 
 // role
 $route['role'] = 'master/role';

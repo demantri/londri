@@ -129,13 +129,21 @@
                 <b class="copyright">&copy; 2014 Edmin - EGrappler.com </b>All rights reserved.
             </div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         
         <script src="<?php echo base_url()?>assets/scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
         <script src="<?php echo base_url()?>assets/scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
         <script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- <script src="<?php echo base_url()?>assets/js/sweetalert2.all.min.js"></script> -->
+
         <script src="<?php echo base_url()?>assets/scripts/flot/jquery.flot.js" type="text/javascript"></script>
         <script src="<?php echo base_url()?>assets/scripts/flot/jquery.flot.resize.js" type="text/javascript"></script>
         <script src="<?php echo base_url()?>assets/scripts/datatables/jquery.dataTables.js" type="text/javascript"></script>
         <script src="<?php echo base_url()?>assets/scripts/common.js" type="text/javascript"></script>
+        <script src="<?php echo base_url()?>assets/js/myscript.js"></script>
+        
+        
       
     </body>

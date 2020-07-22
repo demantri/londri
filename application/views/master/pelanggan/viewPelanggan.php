@@ -11,6 +11,10 @@
 			<h3>Tables</h3>
 		</div>
 		<div class="module-body">
+			<div class="flash-data" data-flashdata="<?php echo $this->session->flashdata('flash')?>"></div>
+			<?php if ($this->session->flashdata('flash')) : ?>
+						
+			<?php endif; ?>
 			<p>
                 <a href="<?php echo site_url('pelanggan/add')?>" class="button btn btn-info"><i class="menu-icon icon-plus"></i> Tambah</a>
             </p>

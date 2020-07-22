@@ -11,8 +11,8 @@
 			<h3>Form Pelanggan</h3>
 		</div>
 		<div class="module-body">
-				<form class="form-horizontal row-fluid" method="POST" action="<?php echo site_url('master/pelanggan/save')?>">
-                    
+				<form class="form-horizontal row-fluid" method="POST" action="<?php echo site_url('pelanggan/save')?>">
+					
                     <div class="control-group">
 						<label class="control-label" for="basicinput">Nama Lengkap</label>
 						<div class="controls">
@@ -36,7 +36,9 @@
     
 					<div class="control-group">
 						<div class="controls">
-							<button type="submit" class="btn btn-success">Submit Form</button>
+							<!-- <button type="submit" class="btn btn-default">Kembali</button> -->
+							<a href="<?php echo site_url('pelanggan')?>" class="button btn btn-default">Kembali</a>
+							<input type="submit" name="" value="Simpan" class="btn btn-success">
 						</div>
 					</div>
 				</form>
