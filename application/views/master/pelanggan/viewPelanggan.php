@@ -26,6 +26,7 @@
 				  <th>Nama Pelanggan</th>
 				  <th>Alamat Pelanggan</th>
 				  <th>No Telp</th>
+				  <th>Aksi</th>
 				</tr>
               </thead>
               <?php
@@ -37,7 +38,11 @@
                     <td><?php echo $no++?></td>
                     <td><?php echo $data['nama']?></td>
                     <td><?php echo $data['alamat']?></td>
-                    <td><?php echo $data['no_telp']?></td>
+					<td><?php echo $data['no_telp']?></td>
+					<td>
+						<a href="<?php echo site_url('pelanggan/edit/'.$data['id'])?>" class="button btn btn-warning"><i class="icon-edit"></i></a>
+						<a href="" class="button btn btn-danger"><i class="icon-trash"></i></a>
+					</td>
                   </tr>
                 <?php } ?>
 			  </tbody>

@@ -8,10 +8,13 @@ $route['translate_uri_dashes'] = FALSE;
 $route['/'] = 'home';
 
 // masterdata
+
 // pelanggan
 $route['pelanggan'] = 'master/pelanggan';
 $route['pelanggan/add'] = 'master/pelanggan/add';
 $route['pelanggan/save'] = 'master/pelanggan/save';
+$route['pelanggan/edit/(:any)'] = 'master/pelanggan/edit/$1';
+$route['pelanggan/update'] = 'master/pelanggan/update';
 
 // role
 $route['role'] = 'master/role';
