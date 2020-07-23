@@ -4,7 +4,9 @@
       public function index()
       {
         $data['total'] = $this->home_model->jumlah_user();
-        // print_r($total);
+        $data['member'] = $this->home_model->jumlah_member();
+
+        // print_r($data['member']);exit;
   		  $this->template->load('template', 'home', $data);
   	  }
     }

@@ -17,8 +17,7 @@
                                         { echo $data['jumlah']; }
                                         ?>
                                     </b>
-                                        <p class="text-muted">
-                                            Total Pelanggan</p>
+                                        <p class="text-muted">Total Pelanggan</p>
                                     </a><a href="#" class="btn-box big span4"><i class="icon-money"></i><b>15,152</b>
                                         <p class="text-muted">
                                             Total Pendapatan</p>
@@ -29,7 +28,9 @@
                                         <div class="row-fluid">
                                             <div class="span12">
                                                 <a href="#" class="btn-box small span4"><i class="icon-envelope"></i><b>Messages</b>
-                                                </a><a href="#" class="btn-box small span4"><i class="icon-group"></i><b>Clients</b>
+                                                </a><a href="#" class="btn-box small span4"><i class="icon-group"></i><b><?php foreach ($member as $data) { 
+                                                        echo $data['jumlah']; }
+                                                    ?> Member Terdaftar</b>
                                                 </a><a href="#" class="btn-box small span4"><i class="icon-exchange"></i><b>Expenses</b>
                                                 </a>
                                             </div>
