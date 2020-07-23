@@ -21,7 +21,10 @@
             return $query->result_array();
         }
 
-        function edit_data($where,$table){		
+        function edit_data($where,$table){	
+            $this->db->select('member.id, status, diskon, member.id_pelanggan, tgl_daftar, b.nama');
+            $this->db->join('pelanggan b', 'b.id = member.id_pelanggan');
+            // $this->db->where($where);
             return $this->db->get_where($table,$where);
         }
      

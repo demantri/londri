@@ -35,9 +35,11 @@
             array(
                 'field' => 'id_pelanggan',
                 'label' => 'Nama pelanggan',
-                'rules' => 'required',
+                'rules' => 'required|is_unique[member.id_pelanggan]
+                ',
                 'errors' => array(
-                'required' => '%s harus dipilih!'
+                  'required' => '%s harus dipilih!',
+                  'is_unique' => '%s sudah terdaftar'
                 )
             ),
             array(
@@ -80,30 +82,37 @@
       }
 
       function edit($id){
-        $where = array('id' => $id);
-        $data['member'] = $this->model->edit_data($where,'member')->result();
-        // var_dump($data['pelanggan']);exit;
+        $where = array('member.id' => $id);
+        $data['member'] = $this->model->edit_data($where,'member')->result_array();
+        // $data['pelanggan'] = $this->pm->getData();
+        // $data['a'] = $this->model->joinmember();
+        // print_r($data['member']);exit;
+
         $this->template->load('template', 'master/member/formEdit', $data);
       }
 
       function update(){
         $id = $this->input->post('id');
-        $nama = $this->input->post('nama');
-        $alamat = $this->input->post('alamat');
-        $no_telp = $this->input->post('no_telp');
+        $status = $this->input->post('status');
+        $diskon = $this->input->post('diskon');
+        $id_pelanggan = $this->input->post('id_pelanggan');
+        $tgl_daftar = $this->input->post('tgl_daftar');
        
         $where = array(
           'id' => $id
         );
         $data = array(
-          'nama' => $nama,
-          'alamat' => $alamat,
-          'no_telp' => $no_telp
+          'status' => $status,
+          'diskon' => $diskon,
+          'id_pelanggan' => $id_pelanggan,
+          'tgl_daftar' => $tgl_daftar
         );
 
-        $this->model->update_data($where, $data, 'pelanggan');
+        // print_r($data); exit;
+
+        $this->model->update_data($where, $data, 'member');
         $this->session->set_flashdata('flash', 'Diubah');
-        redirect('master/pelanggan');
+        redirect('master/member');
       }
 
       function delete($id){
