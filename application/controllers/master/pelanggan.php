@@ -4,6 +4,7 @@
       function __construct(){
         parent::__construct();	
         $this->load->model('pelanggan_model', 'model');
+        
         // if(!$this->session->userdata('login')){
         // 	redirect('');
         // }
@@ -11,7 +12,6 @@
 
       public function index()
       {
-        //   $data['list'] = "SELECT * FROM pelanggan";
           $data['pelanggan'] = $this->model->getData();
           // print_r($data['pelanggan']);exit;
           $this->template->load('template', 'master/pelanggan/viewPelanggan', $data);

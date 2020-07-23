@@ -1,5 +1,5 @@
 <?php 
-    class pelanggan_model extends CI_model
+    class member_model extends CI_model
     {
         function tambah($table, $data)
         {
@@ -8,7 +8,16 @@
 
         function getData() 
         {
-            $query = $this->db->get('pelanggan');
+            $query = $this->db->get('member');
+            return $query->result_array();
+        }
+
+        function joinmember() 
+        {
+            $this->db->select('*');
+            $this->db->from('pelanggan a');
+            $this->db->join('member b', 'a.id = b.id_pelanggan');
+            $query = $this->db->get();
             return $query->result_array();
         }
 

@@ -7,10 +7,10 @@ $autoload['libraries'] = array('database','form_validation', 'session','template
 
 $autoload['drivers'] = array();
 
-$autoload['helper'] = array('url','monthname','formatrp','prefix','formatoption');
+$autoload['helper'] = array('url','monthname','formatrp','prefix','formatoption', 'tanggal');
 
 $autoload['config'] = array('custom');
 
 $autoload['language'] = array();
 
-$autoload['model'] = array('home_model', 'pelanggan_model');
+$autoload['model'] = array('home_model', 'pelanggan_model', 'member_model');
