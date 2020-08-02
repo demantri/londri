@@ -4,7 +4,7 @@ const flashData = $('.flash-data').data('flashdata');
 
 if (flashData) {
     Swal.fire(
-        'Data Pelanggan',
+        'Sukses...',
         'Berhasil ' + flashData,
         'success'
       );

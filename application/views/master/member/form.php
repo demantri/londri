@@ -41,7 +41,6 @@
                     <div class="control-group">
 						<label class="control-label" for="basicinput">Diskon</label>
 						<div class="controls">
-                            <!-- <input type="text" id="diskon" name="diskon" id="basicinput" placeholder="Belum memilih status diskon" class="span8" autocomplete="off" readonly> -->
                             <div class="input-append">
                                 <input type="text" name="diskon" id="diskon"  placeholder="1000" class="span8" readonly><span class="add-on">IDR</span>
                             </div>
@@ -76,9 +75,9 @@
 <script>
     $(document).ready(function(){
         $(document).on('change', '#status', function(){
-            if($('#status').val() == 'member'){
+            if($('#status').val() == 'Member Baru'){
                     $('#diskon').val('2000');
-            } else if ($('#status').val() == 'non'){
+            } else if ($('#status').val() == 'Berhenti'){
                 $('#diskon').val('0');
             }else{
                 $('#diskon').attr('readonly','readonly').val('Pilih!');

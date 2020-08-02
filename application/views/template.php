@@ -85,12 +85,14 @@
                                     </i>More Pages </a>
                                     <ul id="dropMaster" class="collapse unstyled">
                                         <li><a href="<?php echo site_url('pelanggan')?>"><i class="icon-inbox"></i>Pelanggan </a></li>
-                                        <li><a href="<?php echo site_url('role')?>"><i class="icon-inbox"></i>Role </a></li>
+                                        <li><a href="<?php echo site_url('londri')?>"><i class="icon-inbox"></i>Londri </a></li>
+                                        <li><a href="<?php echo site_url('jenis')?>"><i class="icon-inbox"></i>Jenis Londri </a></li>
+                                        <li><a href="#"><i class="icon-inbox"></i>Role </a></li>
                                         <li><a href="other-user-listing.html"><i class="icon-inbox"></i>All Users </a></li>
                                     </ul>
                                 </li>
                                 <li><a href="<?= site_url('member') ?>"><i class="menu-icon icon-bold"></i> Daftar Member </a></li>
-                                <li><a href="#"><i class="menu-icon icon-book"></i>Typography </a></li>
+                                <li><a href="<?= site_url('pegawai') ?>"><i class="menu-icon icon-book"></i>Daftar Pegawai </a></li>
                                 <li><a href="#"><i class="menu-icon icon-paste"></i>Forms </a></li>
                                 <li><a href="#"><i class="menu-icon icon-table"></i>Tables </a></li>
                                 <li><a href="#"><i class="menu-icon icon-bar-chart"></i>Charts </a></li>
