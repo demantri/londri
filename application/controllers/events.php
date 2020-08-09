@@ -5,7 +5,7 @@
       {
         parent::__construct();	
         $this->load->model(array(
-          'role_model' => 'rm'
+        //   'role_model' => 'rm'
         ));
         
         // if(!$this->session->userdata('login')){
