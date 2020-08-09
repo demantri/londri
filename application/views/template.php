@@ -11,6 +11,8 @@
         <link type="text/css" href="<?php echo base_url()?>assets/images/icons/css/font-awesome.css" rel="stylesheet">
         <link type="text/css" href='<?php echo base_url()?>assets/http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600'
             rel='stylesheet'>
+        <!-- <link rel="stylesheet" href="<?= base_url()?>fullcalendar/lib/main.css"> -->
+
     </head>
     <body>
         <div class="navbar navbar-fixed-top">
@@ -43,7 +45,7 @@
                             </li>
                             <li><a href="#">Support </a></li>
                             <li class="nav-user dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="images/user.png" class="nav-avatar" />
+                                <img src="assets/images/user.png" class="nav-avatar" />
                                 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Your Profile</a></li>
@@ -71,6 +73,8 @@
                                 </a></li>
                                 <li><a href="activity.html"><i class="menu-icon icon-bullhorn"></i>News Feed </a>
                                 </li>
+                                <li><a href="<?= site_url('events') ?>"><i class="menu-icon icon-calendar"></i>Events </a>
+                                </li>
                                 <li><a href="message.html"><i class="menu-icon icon-inbox"></i>Inbox <b class="label green pull-right">
                                     11</b> </a></li>
                                 <li><a href="task.html"><i class="menu-icon icon-tasks"></i>Tasks <b class="label orange pull-right">
@@ -87,7 +91,7 @@
                                         <li><a href="<?php echo site_url('pelanggan')?>"><i class="icon-inbox"></i>Pelanggan </a></li>
                                         <li><a href="<?php echo site_url('londri')?>"><i class="icon-inbox"></i>Londri </a></li>
                                         <li><a href="<?php echo site_url('jenis')?>"><i class="icon-inbox"></i>Jenis Londri </a></li>
-                                        <li><a href="#"><i class="icon-inbox"></i>Role </a></li>
+                                        <li><a href="<?= site_url('role')?>"><i class="icon-inbox"></i>Role </a></li>
                                         <li><a href="other-user-listing.html"><i class="icon-inbox"></i>All Users </a></li>
                                     </ul>
                                 </li>
@@ -135,7 +139,6 @@
         <!-- <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> -->
         <script src="<?php echo base_url()?>assets/js/sweetalert2.all.min.js"></script>
-
         
         <script src="<?php echo base_url()?>assets/scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
         <script src="<?php echo base_url()?>assets/scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
@@ -147,7 +150,10 @@
         <script src="<?php echo base_url()?>assets/scripts/datatables/jquery.dataTables.js" type="text/javascript"></script>
         <script src="<?php echo base_url()?>assets/scripts/common.js" type="text/javascript"></script>
         <script src="<?php echo base_url()?>assets/js/myscript.js"></script>
-        
-        
-      
+
+        <!-- fullcalendar -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/locale/af.min.js"></script> -->
+        <!-- <script src="<?= base_url() ?>fullcalendar/lib/main.js"></script> -->
+
+
     </body>

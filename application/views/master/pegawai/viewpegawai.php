@@ -40,7 +40,13 @@
                     <td><?php echo $data['nama_pegawai'] ?></td>
                     <td><?php echo $data['alamat_pegawai'] ?></td>
                     <td><?php echo $data['telp_pegawai'] ?></td>
-                    <td><img width="100" src="<?php echo base_url(); ?>uploads/<?php echo $data['foto'];?>"/></td>
+                    <td>
+                        <?php if (is_null($data['foto'])) { ?>
+                            <img width="70" src="<?php echo base_url(); ?>assets/images/no_image.jpeg" />
+                        <?php } else { ?>
+                            <img width="70" src="<?php echo base_url(); ?>uploads/<?php echo $data['foto'];?>"/>
+                        <?php } ?>
+                    </td>
 					<td>
 						<a href="<?php echo site_url('pegawai/edit/'.$data['id'])?>" class="button btn btn-warning"><i class="icon-edit"></i></a>
 						<a href="<?php echo site_url('pegawai/delete/'.$data['id'])?>" class="button btn btn-danger tombol-hapus"><i class="icon-trash"></i></a>

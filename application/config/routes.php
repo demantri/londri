@@ -45,3 +45,13 @@ $route['pegawai/delete/(:any)'] = 'master/pegawai/delete/$1';
 
 // role
 $route['role'] = 'master/role';
+$route['role/add'] = 'master/role/add';
+$route['role/save'] = 'master/role/save';
+$route['role/edit/(:any)'] = 'master/role/edit/$1';
+$route['role/update'] = 'master/role/update';
+$route['role/delete/(:any)'] = 'master/role/delete/$1';
+
+
+
+// events 
+$route['event'] = 'calendar/events';
