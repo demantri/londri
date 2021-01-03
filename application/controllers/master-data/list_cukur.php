@@ -12,6 +12,8 @@
             $this->template->load('index', 'master-data/list_cukur/index', $data);
         }
 
+        // testing
+
         public function save()
         {
             $data = array(
