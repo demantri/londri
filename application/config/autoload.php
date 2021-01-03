@@ -13,4 +13,4 @@ $autoload['config'] = array('custom');
 
 $autoload['language'] = array();
 
-$autoload['model'] = array('home_model', 'pelanggan_model', 'member_model', 'londri_model', 'pegawai_model');
+$autoload['model'] = array('home_model', 'pelanggan_model', 'member_model', 'londri_model', 'roles_model', 'karyawan_model');

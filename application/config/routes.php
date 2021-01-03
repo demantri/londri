@@ -10,46 +10,61 @@ $route['/'] = 'home';
 // masterdata
 
 // pelanggan
-$route['pelanggan'] = 'master/pelanggan';
-$route['pelanggan/add'] = 'master/pelanggan/add';
-$route['pelanggan/save'] = 'master/pelanggan/save';
-$route['pelanggan/edit/(:any)'] = 'master/pelanggan/edit/$1';
-$route['pelanggan/update'] = 'master/pelanggan/update';
-$route['pelanggan/delete/(:any)'] = 'master/pelanggan/delete/$1';
+$route['pelanggan'] = 'master-data/pelanggan';
+$route['pelanggan/add'] = 'master-data/pelanggan/add';
+$route['pelanggan/save'] = 'master-data/pelanggan/save';
+$route['pelanggan/edit/(:any)'] = 'master-data/pelanggan/edit/$1';
+$route['pelanggan/update'] = 'master-data/pelanggan/update';
+$route['pelanggan/delete/(:any)'] = 'master-data/pelanggan/delete/$1';
 
-// member
-$route['member'] = 'master/member';
-$route['member/add'] = 'master/member/add';
-$route['member/save'] = 'master/member/save';
-$route['member/edit/(:any)'] = 'master/member/edit/$1';
-$route['member/update'] = 'master/member/update';
-$route['member/delete/(:any)'] = 'master/member/delete/$1';
+// list_cukur
+$route['list_cukur'] = 'master-data/list_cukur';
+$route['list_cukur/add'] = 'master-data/list_cukur/add';
+$route['list_cukur/save'] = 'master-data/list_cukur/save';
+$route['list_cukur/edit/(:any)'] = 'master-data/list_cukur/edit/$1';
+$route['list_cukur/update'] = 'master-data/list_cukur/update';
+$route['list_cukur/delete/(:any)'] = 'master-data/list_cukur/delete/$1';
 
-// londri
-$route['londri'] = 'master/londri';
-$route['londri/add'] = 'master/londri/add';
-$route['londri/save'] = 'master/londri/save';
-$route['londri/edit/(:any)'] = 'master/londri/edit/$1';
-$route['londri/update'] = 'master/londri/update';
-$route['londri/delete/(:any)'] = 'master/londri/delete/$1';
+// karyawan
+$route['karyawan'] = 'master-data/karyawan';
+$route['karyawan/add'] = 'master-data/karyawan/add';
+$route['karyawan/save'] = 'master-data/karyawan/save';
+$route['karyawan/edit/(:any)'] = 'master-data/karyawan/edit/$1';
+$route['karyawan/update'] = 'master-data/karyawan/update';
+$route['karyawan/delete/(:any)'] = 'master-data/karyawan/delete/$1';
 
-// pegawai
-$route['pegawai'] = 'master/pegawai';
-$route['pegawai/add'] = 'master/pegawai/add';
-$route['pegawai/save'] = 'master/pegawai/save';
-$route['pegawai/edit/(:any)'] = 'master/pegawai/edit/$1';
-$route['pegawai/update'] = 'master/pegawai/update';
-$route['pegawai/delete/(:any)'] = 'master/pegawai/delete/$1';
+// roles
+$route['roles'] = 'master-data/roles';
+$route['roles/add'] = 'master-data/roles/add';
+$route['roles/save'] = 'master-data/roles/save';
+$route['roles/edit/(:any)'] = 'master-data/roles/edit/$1';
+$route['roles/update'] = 'master-data/roles/update';
+$route['roles/delete/(:any)'] = 'master-data/roles/delete/$1';
 
+// list_cukur
+$route['list_cukur'] = 'master-data/list_cukur';
+$route['list_cukur/add'] = 'master-data/list_cukur/add';
+$route['list_cukur/save'] = 'master-data/list_cukur/save';
+$route['list_cukur/edit/(:any)'] = 'master-data/list_cukur/edit/$1';
+$route['list_cukur/update'] = 'master-data/list_cukur/update';
+$route['list_cukur/delete/(:any)'] = 'master-data/list_cukur/delete/$1';
 
+// barang
+$route['barang'] = 'master-data/barang';
+$route['barang/add'] = 'master-data/barang/add';
+$route['barang/save'] = 'master-data/barang/save';
+$route['barang/edit/(:any)'] = 'master-data/barang/edit/$1';
+$route['barang/update'] = 'master-data/barang/update';
+$route['barang/delete/(:any)'] = 'master-data/barang/delete/$1';
 
-// role
-$route['role'] = 'master/role';
-$route['role/add'] = 'master/role/add';
-$route['role/save'] = 'master/role/save';
-$route['role/edit/(:any)'] = 'master/role/edit/$1';
-$route['role/update'] = 'master/role/update';
-$route['role/delete/(:any)'] = 'master/role/delete/$1';
+// kateogri
+$route['kategori'] = 'master-data/kategori';
+$route['kategori/add'] = 'master-data/kategori/add';
+$route['kategori/save'] = 'master-data/kategori/save';
+$route['kategori/edit/(:any)'] = 'master-data/kategori/edit/$1';
+$route['kategori/update'] = 'master-data/kategori/update';
+$route['kategori/delete/(:any)'] = 'master-data/kategori/delete/$1';
+
 
 
 
